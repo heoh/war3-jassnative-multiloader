@@ -1,0 +1,3 @@
+[submodule "lib/JassNative"]
+	path = lib/JassNative
+	url = https://github.com/BlacklightsC/JassNative.git
