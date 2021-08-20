@@ -62,8 +62,9 @@ namespace Cirnix.JassNative.MultiLoader
 
         private static int CountGameApplications()
         {
-            Process[] ProcessList = Process.GetProcessesByName("War3");
-            return ProcessList.Length;
+            string processName = Process.GetCurrentProcess().ProcessName;
+            Process[] apps = Process.GetProcessesByName(processName);
+            return apps.Length;
         }
 
         private static IPAddr CreateRandomIP()
